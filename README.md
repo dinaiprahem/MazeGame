@@ -1,6 +1,6 @@
 # Maze Game
 
-Welcome to the Maze Game repository! This project is a console-based maze game written in C#. The game features a player navigating through a maze using keyboard arrow keys to reach the exit.
+Welcome to the Maze Game repository! Maze Game is a C# console-based game where players navigate a randomly generated maze using arrow keys. The objective is to find the exit, which is always reachable. This project demonstrates basic game mechanics, maze generation, and user input handling in C# using Object-Oriented Programming (OOP) principles.
 
 ## Project Overview
 
@@ -15,6 +15,20 @@ Welcome to the Maze Game repository! This project is a console-based maze game w
 
 - **Programming Language**: C#
 - **Development Environment**: Visual Studio
+
+### Object-Oriented Programming (OOP)
+
+This project employs OOP principles to create a well-structured and maintainable codebase:
+
+- **Encapsulation**: Classes like `Player`, `Maze`, and `Wall` encapsulate data and methods related to their respective functionalities. For instance, the `Player` class manages the player's position and icon, while the `Maze` class handles maze generation and drawing.
+
+- **Abstraction**: The `IMazeObjects` interface abstracts common functionalities of maze elements like walls and empty spaces. This allows for a flexible design where different types of maze objects can be managed through a common interface.
+
+- **Inheritance**: The `Wall` and `EmptySpaces` classes inherit from the `IMazeObjects` interface, allowing them to be used interchangeably in the maze without altering the core logic.
+
+- **Polymorphism**: Through the use of the `IMazeObjects` interface, the code demonstrates polymorphism by treating different maze objects uniformly, which simplifies the handling of various types of objects within the maze.
+
+- **Player Class**: The `Player` class is designed to represent the player within the maze. It encapsulates the player's position and icon, and provides methods for updating the player's position based on user input. This class demonstrates encapsulation and abstraction by managing the player-specific logic separately from the maze logic.
 
 ## Usage
 
@@ -41,4 +55,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any questions or feedback, feel free to contact me via [GitHub Issues](https://github.com/dinaiprahem/MazeGame/issues).
-
