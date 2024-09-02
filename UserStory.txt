@@ -1,0 +1,34 @@
+1- as player, i want to move through maze using arrow keys so that i can reach the exit 
+2- as player , i want to see the maze displayed wirh walls ans empty spaces that i can understand the layout of maze 
+3- as player , i want to se my character represented by @ sympol so i can track my position in maze
+
+actor(player) , functions(verbs) , class names(nouns)
+classes : player , maze , arrow keys , exit, walls , empty space
+layout, character , @symbol, position
+
+methods : move,display
+
+*interface : Imaze object --> عنصر من عناصر اللعبه ممكن يكون حيطه او مساحه او اللاعب readOnly(the wall not change to space so it get only cant use set in its property)
+
+*relation: dashed line with empty arrow
+
+*wall , empty space ,character implement the interface
+
+*maze : has a collection of IMaze objects ( collection of walls,empty spaces )
+so relatioon in aggregation (1..*) one maze have many objects
+
+*layout is the maze;    
+
+*exit is the empty space where te character move and exit 
+
+*player is character is the symbol
+
+*draw the maze ( display method is in maze ) , fields (width , height );
+
+*when move i take different position so move and position have a relation
+move responsible in maze with arrow keys;
+
+*in maze object there is icon ( solid or space or player)
+
+*movementBlock (is solid true or false)--> وونا بلعب لاما همشي في فراغ لاما هخبط ف الحيطه هنسميها سوليد لان لو هي سوليد مش هيعرف اللاعب يعدي لو مش سوليد هيعرف يعدي 
+
